@@ -3,12 +3,16 @@
     // Elaborar um programa para uma lan house. O programa deve ler o valor a ser pago para cada 10 minutos de utilização do computador e o tempo total que a pessoa utilizou em minutos. Informe o valor a ser pago pelo cliente, sabendo que as frações extras de 10 minutos devem ser cobradas de forma integral.
 
     //ENTRADA
+    const preço = Number(prompt("Quanto custa a a utilização do computador?"));
+    const minutos = Number(prompt("Por quantos minutos você ira usar o computador?Acima de dez minutos"));
 
-    
+
     //PROCESSAMENTO
+    const vezes =  minutos / 10
+    const valor = preço * vezes
 
 
     //SAÍDA
-
+    document.write(`Você terá que pagar R$${valor} no fim do seu uso`);
 
 </script>

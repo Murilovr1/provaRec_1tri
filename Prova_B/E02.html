@@ -4,12 +4,17 @@
     // Faça um script que leia o custo de fábrica do computador e calcule os custos adicionais, apresentando o custo final do computador ao comprador.
 
     //ENTRADA
+    const comp = Number(prompt("Quanto é custo de frábica do computador?"));
 
     
     //PROCESSAMENTO
+    const imposto = comp * (30 / 100)
+    const loja = comp * (45 / 100)
+    const valor = comp + loja + imposto 
 
 
     //SAÍDA
+    document.write(`O custo do computador para os compradores será de R$${valor}`);
 
 
 </script>

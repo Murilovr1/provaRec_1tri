@@ -4,11 +4,17 @@
     // Por exemplo, em uma empresa com 200 funcionários, apenas 40 funcionários possuem acesso à Internet, o que equivale a 40% destes 200 alunos.
 
     //ENTRADA
+    const func = Number(prompt("Quantos funcionarios existem na sua empresa ao todo?"));
+    const internet = Number(prompt("Quantos funcionários possuem internet em casa?"));
 
 
     //PROCESSAMENTO
-    
 
+    const tem = func * ( internet / 100);
+    
+    
     //SAÍDA
+
+    document.write(`Na empresa, dentre desses ${func} funcionários, apenas ${tem}% deles possuem internet em casa.`);
 
 </script>

@@ -3,11 +3,15 @@
     //Elaborar um programa que pergunte ao usuário quantas horas e quantos minutos de duração possui uma partida. Calcule e informe a duração total da partida em número de minutos.
     
     //ENTRADA
+    const horas = Number(prompt("Quantas horas dura uma partida?"));
+    const min = Number(prompt("E quantos minutos a partida possui?"));
 
 
     //PROCESSAMENTO
-
+    const min2 = horas * 60;
+    const  tempot = min + min2; 
 
     //SAÍDA
+    document.write(`A partida possui ${tempot} minutos ao todo`);
     
 </script>
